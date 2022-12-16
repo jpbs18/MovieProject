@@ -1,0 +1,22 @@
+import styled from "styled-components";
+import Link from "next/link";
+
+const AdContainer = styled.div`
+  width:684px;
+  height:364px;
+  border-radius:10px;
+  border:10px solid #61D6B6;
+  background:#FFFFFF;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:30px;
+  align-items:center;
+  margin-top:120px;
+`;
+
+const ButtonLink = styled(Link)`
+  margin-top:6px;
+`;
+
+export {AdContainer, ButtonLink};
