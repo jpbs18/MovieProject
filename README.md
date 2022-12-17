@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/16522615736d43178f56b7b946b803cd)](https://app.codacy.com/gh/jpbs18/MovieProject?utm_source=github.com&utm_medium=referral&utm_content=jpbs18/MovieProject&utm_campaign=Badge_Grade_Settings)
+
 First, install all the necessary dependencies and then run the development server:
 
 ```bash
