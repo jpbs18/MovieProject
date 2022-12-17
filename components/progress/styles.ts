@@ -24,24 +24,6 @@ const Display = styled.div`
   top:55px;
 `;
 
-const Input = styled.input`
-  display:none;
-  color: #22DAA8;
-  
-  & + label span {
-    display:inline-block;
-    width:18px;
-    height:18px;
-    border-radius:50%;
-    border:1.5px solid #22DAA8;
-    background-color:#FFFFFF;
-  }
-  
-  &:checked + label span {
-    background-color:#22DAA8;
-  }
-`;
-
 const Text = styled.p`
   margin:0;
   top:20px;
@@ -51,4 +33,4 @@ const Text = styled.p`
   font-size:19px;
 `;
 
-export {Progress, Display, Input, Text};
+export {Progress, Display, Text};
