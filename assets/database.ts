@@ -5,7 +5,7 @@ import {purple_hearts, gray_man, top_gun, rings, punisher, bourne, mission_impos
     avatar, inception, forrest_gump, spider_man, batman, thor, bullet_train, black_adam, godzilla, godzilla_kong}
     from "../public";
 
-export const json : { movies: Movie[] , listOfOptions: string[]} = {
+export const json : { movies: Movie[] } = {
 
     movies:[
 
@@ -318,12 +318,6 @@ export const json : { movies: Movie[] , listOfOptions: string[]} = {
             }
         ]
     }],
-
-    listOfOptions: [
-        "Choose one of the three movies",
-        "Which one do you like the most?",
-        "Which one do you want to watch now?"
-    ],
 };
 
 
