@@ -13,7 +13,7 @@ const MyProgress = () => {
             <Text>question {counter} of {listOfOptions.length}:</Text>
             <Display>
                 {listOfOptions.map((element, index) => {
-                    return <DisplayElement key={index + "element"} value={counter === index + 1}/>
+                    return <DisplayElement key={index + "-element"} value={counter === index + 1}/>
                 })}
             </Display>
         </Progress>

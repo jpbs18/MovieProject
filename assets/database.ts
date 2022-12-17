@@ -4,9 +4,12 @@ import {purple_hearts, gray_man, top_gun, rings, punisher, bourne, mission_impos
     godfather, terminator, shawshank, equalizer, wakanda, home_alone, water_boy, blonde, training_day, flash,
     avatar, inception, forrest_gump, spider_man, batman, thor, bullet_train, black_adam, godzilla, godzilla_kong}
     from "../public";
-export const listOfMovies : Movie[]= [
 
-    {
+export const json : { movies: Movie[] } = {
+
+    movies:[
+
+        {
         imageUrl:gray_man,
         title:"The Gray Man",
         id:1,
@@ -23,7 +26,29 @@ export const listOfMovies : Movie[]= [
                         title:"Avatar",
                         id:13,
                         imdb:"https://www.imdb.com/title/tt1630029/?ref_=nv_sr_srsg_0",
-                        children:[]
+                        children:[
+                            {
+                                imageUrl:black_adam,
+                                title:"Black Adam",
+                                id:16,
+                                imdb:"https://www.imdb.com/title/tt6443346/",
+                                children:[]
+                            },
+                            {
+                                imageUrl:godzilla,
+                                title:"Godzilla",
+                                id:17,
+                                imdb:"https://www.imdb.com/title/tt0831387/",
+                                children:[]
+                            },
+                            {
+                                imageUrl:godzilla_kong,
+                                title:"Kong",
+                                id:18,
+                                imdb:"https://www.imdb.com/title/tt5034838/",
+                                children:[]
+                            }
+                        ]
                     },
                     {
                         imageUrl:inception,
@@ -292,7 +317,7 @@ export const listOfMovies : Movie[]= [
                 ]
             }
         ]
-    }
-];
+    }]
+};
 
 
