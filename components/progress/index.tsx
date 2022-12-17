@@ -1,6 +1,8 @@
-import {Progress, Display, Text, Input} from "./styles";
+import {Progress, Display, Text} from "./styles";
 import {AppContext} from "../../pages/_app";
 import {useContext} from "react";
+import {DisplayElement} from "../progress-element";
+import {listOfOptions} from "../../assets/listOfOptions";
 
 const MyProgress = () => {
 
@@ -8,22 +10,11 @@ const MyProgress = () => {
 
     return (
         <Progress>
-            <Text>question {counter} of 3:</Text>
+            <Text>question {counter} of {listOfOptions.length}:</Text>
             <Display>
-                <div>
-                    <Input type="radio" defaultChecked={counter === 1}/>
-                    <label><span></span></label>
-                </div>
-
-                <div>
-                    <Input type="radio" defaultChecked={counter === 2}/>
-                    <label><span></span></label>
-                </div>
-
-                <div>
-                    <Input type="radio" defaultChecked={counter === 3}/>
-                    <label><span></span></label>
-                </div>
+                {listOfOptions.map((element, index) => {
+                    return <DisplayElement key={index + "element"} value={counter === index + 1}/>
+                })}
             </Display>
         </Progress>
     );
