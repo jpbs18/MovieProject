@@ -2,7 +2,7 @@ import {Progress, Display, Text} from "./styles";
 import {AppContext} from "../../pages/_app";
 import {useContext} from "react";
 import {DisplayElement} from "../progress-element";
-import {listOfOptions} from "../../assets/listOfOptions";
+import {json} from "../../assets/database";
 
 const MyProgress = () => {
 
@@ -10,9 +10,9 @@ const MyProgress = () => {
 
     return (
         <Progress>
-            <Text>question {counter} of {listOfOptions.length}:</Text>
+            <Text>question {counter} of {json.listOfOptions.length}:</Text>
             <Display>
-                {listOfOptions.map((element, index) => {
+                {json.listOfOptions.map((element, index) => {
                     return <DisplayElement key={index + "-element"} value={counter === index + 1}/>
                 })}
             </Display>
