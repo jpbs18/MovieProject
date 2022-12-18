@@ -1,12 +1,13 @@
 import {ImagesContainer} from "./style";
-import {useContext} from "react";
+import {useContext, useEffect} from "react";
 import {AppContext} from "../../pages/_app";
 import {MyMovie} from "../movie";
 import {Movie} from "../../pages/types";
 
 const MyMoviesContainer = () => {
 
-    const {counter, setCounter, selected, setSelected, setImdb, isItOver, setIsItOver} = useContext(AppContext);
+    const {counter, setCounter, selected, setSelected, imdb, setImdb, isItOver, setIsItOver} = useContext(AppContext);
+
     const handleClick = (imdb: string, id: number) => {
         const movieSelected = selected?.filter((movie) => movie.id === id)[0];
         setCounter(counter + 1);
