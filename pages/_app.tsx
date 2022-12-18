@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   useEffect(() => {
 
-    if(sessionStorage.getItem("storage") !== null){
+    if(sessionStorage.getItem("storage")){
 
       const data = JSON.parse(sessionStorage.getItem("storage") || "{}");
       setCounter(data.counter);
