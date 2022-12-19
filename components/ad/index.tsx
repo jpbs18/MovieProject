@@ -13,7 +13,7 @@ const MyAd = () => {
             <PrimaryHeading text={"Watch new movies for free!"}/>
             <SecondaryHeading text={"Watch any movies online for free without ads!"}/>
             <SecondaryHeading text={"Have fun watching your favourite movies!"}/>
-            <ButtonLink href={imdb} target={"_blank"}>
+            <ButtonLink href={imdb} target={"_blank"} prefetch={false}>
                 <AdButton text={"Watch here!"}/>
             </ButtonLink>
         </AdContainer>

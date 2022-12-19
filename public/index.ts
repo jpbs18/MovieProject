@@ -37,7 +37,7 @@ import mission_impossible from "./images/mission_impossible.jpg";
 import bourne from "./images/bourne.jpg";
 import punisher from "./images/punisher.jpg";
 import rings from "./images/rings.jpg";
-import MoviesBG from "./images/MoviesBG.png";
+import MoviesBG from "./images/MoviesBG.webp";
 import overlay from "./images/overlay.png";
 
 
