@@ -1,7 +1,7 @@
 import purple_hearts from "./images/purlpe_hearts.jpg";
 import gray_man from "./images/gray_man.webp";
 import top_gun from "./images/top_gun.jpg";
-import avatar from "./images/avatar.jpg";
+import avatar from "./images/avatar.webp";
 import inception from "./images/inception.jpg";
 import forrest_gump from "./images/forrest_gump.jpg";
 import bullet_train from "./images/bullet_train.jpg";
@@ -22,7 +22,7 @@ import shawshank from "./images/shawshank.jpg";
 import terminator from "./images/terminator.jpg";
 import godfather from "./images/godfather.jpg";
 import sixty_seconds from "./images/sixty_seconds.jpg";
-import bad_boys from "./images/bad_boys.jpg";
+import bad_boys from "./images/bad_boys.webp";
 import goodfellas from "./images/goodfellas.jpg";
 import minions from "./images/minions.webp";
 import casino from "./images/casino.jpg";
