@@ -6,14 +6,14 @@ import {listOfOptions} from "../../utils/list-options";
 
 const MyProgress = () => {
 
-    const {counter} = useContext(AppContext);
+    const {movieState} = useContext(AppContext);
 
     return (
         <Progress>
-            <Text>question {counter} of {listOfOptions.length}:</Text>
+            <Text>question {movieState.counter} of {listOfOptions.length}:</Text>
             <Display>
                 {listOfOptions.map((element, index) => {
-                    return <DisplayElement key={index + "-element"} value={counter === index + 1}/>
+                    return <DisplayElement key={index + "-element"} value={movieState.counter === index + 1}/>
                 })}
             </Display>
         </Progress>

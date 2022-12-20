@@ -5,9 +5,9 @@ import {listOfOptions} from "../../utils/list-options";
 
 const MyTitle = () => {
 
-    const {counter} = useContext(AppContext);
+    const {movieState} = useContext(AppContext);
 
-    return <MainHeading text={listOfOptions[counter - 1]}/>
+    return <MainHeading text={listOfOptions[movieState.counter - 1]}/>
 }
 
 export {MyTitle};

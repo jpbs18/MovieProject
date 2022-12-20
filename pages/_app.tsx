@@ -3,21 +3,18 @@ import type { AppProps } from 'next/app'
 import {createContext, useEffect, useState} from "react";
 import {ContextType} from "./types";
 import {json} from "../assets/database";
-import {Movie} from "./types";
 import {MyHead} from "../components";
 import {listOfOptions} from "../utils/list-options";
 
 const AppContext = createContext<ContextType>({
-  selected: json.movies, setSelected: () => null,
-  counter: 1, setCounter: () =>  null,
-  imdb: "", setImdb: () => null,
-  isItOver:false, setIsItOver: () => null});
+  movieState:{selected: json.movies, counter: 1, imdb: ""},
+  setMovieState:() => null,
+  isItOver:false,
+  setIsItOver: () => null});
 
 export default function App({ Component, pageProps }: AppProps) {
 
-  const [selected, setSelected] = useState<Movie[] | undefined>(json.movies);
-  const [counter, setCounter] = useState<number>(1);
-  const [imdb, setImdb] = useState<string>("");
+  const [movieState, setMovieState] = useState({selected: json.movies, counter: 1, imdb: ""});
   const [isItOver, setIsItOver] = useState<boolean>(false);
 
   useEffect(() => {
@@ -25,9 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
     if(sessionStorage.getItem("storage")){
 
       const data = JSON.parse(sessionStorage.getItem("storage") || "{}");
-      setCounter(data.counter);
-      setImdb(data.imdb);
-      setSelected(data.selected);
+      setMovieState({...movieState, selected: data.selected, imdb: data.imdb, counter: data.counter});
       setIsItOver(data.isItOver);
     }
   },[])
@@ -36,18 +31,18 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
 
     const dataStorage = {
-      counter: counter,
-      imdb: imdb,
-      selected: selected,
-      isItOver: counter > listOfOptions.length,
+      counter: movieState.counter,
+      imdb: movieState.imdb,
+      selected: movieState.selected,
+      isItOver: movieState.counter > listOfOptions.length,
     }
 
     sessionStorage.setItem("storage", JSON.stringify(dataStorage));
-  },[counter, imdb, selected])
+  },[movieState.counter, movieState.imdb, movieState.selected])
 
 
     return (
-      <AppContext.Provider value={{selected, setSelected, counter, setCounter, imdb, setImdb, isItOver, setIsItOver}}>
+      <AppContext.Provider value={{movieState, setMovieState, isItOver, setIsItOver}}>
         <MyHead/>
         <Component {...pageProps} />
       </AppContext.Provider>

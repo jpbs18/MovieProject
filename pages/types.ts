@@ -1,14 +1,16 @@
 import {Dispatch, SetStateAction} from "react";
 import {StaticImageData} from "next/image";
 
-export interface ContextType{
-    selected: Movie[] | undefined,
-    setSelected: Dispatch<SetStateAction<Movie[] | undefined>>,
+interface MovieState{
+    selected: Movie[],
     counter: number,
-    setCounter: Dispatch<SetStateAction<number>>,
     imdb: string,
-    setImdb: Dispatch<SetStateAction<string>>,
-    isItOver: boolean,
+}
+
+export interface ContextType{
+    movieState: MovieState,
+    setMovieState: Dispatch<SetStateAction<{ selected: Movie[]; counter: number; imdb: string; }>>,
+    isItOver: boolean
     setIsItOver: Dispatch<SetStateAction<boolean>>
 }
 
