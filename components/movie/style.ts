@@ -16,7 +16,7 @@ const MovieImage = styled(Image)`
     z-index:0;
   }
 `;
-const Overlay = styled.img`
+const Overlay = styled(Image)`
   border-radius:10px;
   cursor:pointer;
   position:absolute;

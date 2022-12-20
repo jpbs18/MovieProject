@@ -22,6 +22,7 @@ const MyMovie = (props: MovieProps) => {
                 width={"204"}
                 height={"300"}
                 onClick={handleClick}
+                loading={"lazy"}
             />
         </ImageContainer>
     )
