@@ -11,16 +11,16 @@ const MyMovie = (props: MovieProps) => {
             <MovieImage
                 src={url}
                 alt={title}
-                width="204"
-                height="300"
+                width="200"
+                height="291"
                 onClick={handleClick}
                 priority
             />
             <Overlay
                 src={"/images/overlay.png"}
                 alt={""}
-                width={"204"}
-                height={"300"}
+                width={"200"}
+                height={"291"}
                 onClick={handleClick}
                 loading={"lazy"}
             />

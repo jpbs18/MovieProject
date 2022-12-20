@@ -1,7 +1,8 @@
-import purple_hearts from "./images/purlpe_hearts.webp";
 import gray_man from "./images/gray_man.webp";
 import top_gun from "./images/top_gun.webp";
 import avatar from "./images/avatar.webp";
+import wakanda from "./images/wakanda.webp";
+import purple_hearts from "./images/purple_hearts.webp";
 import inception from "./images/inception.webp";
 import forrest_gump from "./images/forrest_gump.webp";
 import bullet_train from "./images/bullet_train.webp";
@@ -16,7 +17,6 @@ import blonde from "./images/blonde.webp";
 import training_day from "./images/training_day.webp";
 import water_boy from "./images/water_boy.webp";
 import home_alone from "./images/home_alone.webp";
-import wakanda from "./images/wakanda.webp";
 import equalizer from "./images/equalizer.webp";
 import shawshank from "./images/shawshank.webp";
 import terminator from "./images/terminator.webp";
