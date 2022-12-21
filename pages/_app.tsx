@@ -1,16 +1,10 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import {createContext, useEffect, useState} from "react";
-import {ContextType} from "./types";
+import {useEffect, useState} from "react";
 import {json} from "../assets/database";
 import {MyHead} from "../components";
 import {listOfOptions} from "../utils/list-options";
-
-const AppContext = createContext<ContextType>({
-  movieState:{selected: json.movies, counter: 1, imdb: ""},
-  setMovieState:() => null,
-  isItOver:false,
-  setIsItOver: () => null});
+import {AppContext} from "./context";
 
 export default function App({ Component, pageProps }: AppProps) {
 
