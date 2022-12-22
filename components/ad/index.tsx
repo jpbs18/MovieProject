@@ -3,7 +3,6 @@ import {useContext} from "react";
 import {AppContext} from "../../pages/_app";
 import {AdButton, PrimaryHeading, SecondaryHeading} from "../sub-components";
 
-
 const MyAd = () => {
 
     const {movieState} = useContext(AppContext);

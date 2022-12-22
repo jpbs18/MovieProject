@@ -7,13 +7,6 @@ interface MovieState{
     imdb: string,
 }
 
-export interface ContextType{
-    movieState: MovieState,
-    setMovieState: Dispatch<SetStateAction<{ selected: Movie[]; counter: number; imdb: string; }>>,
-    isItOver: boolean
-    setIsItOver: Dispatch<SetStateAction<boolean>>
-}
-
 export interface Movie{
     imageUrl: string | StaticImageData,
     title: string,
@@ -21,6 +14,15 @@ export interface Movie{
     imdb: string,
     children:Movie[]
 }
+
+export interface AppContextType{
+    movieState: MovieState,
+    setMovieState: Dispatch<SetStateAction<{ selected: Movie[]; counter: number; imdb: string; }>>,
+    isItOver: boolean
+    setIsItOver: Dispatch<SetStateAction<boolean>>
+}
+
+
 
 
 

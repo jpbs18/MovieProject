@@ -37,8 +37,8 @@ export default function App({ Component, pageProps }: AppProps) {
 
     return (
       <AppContext.Provider value={{movieState, setMovieState, isItOver, setIsItOver}}>
-        <MyHead/>
-        <Component {...pageProps} />
+          <MyHead/>
+          <Component {...pageProps} />
       </AppContext.Provider>
   )
 }

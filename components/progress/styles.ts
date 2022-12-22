@@ -1,11 +1,11 @@
 import styled from "styled-components";
-
+import {theme} from "../../styles/theme";
 const Progress = styled.div`
   width:220px;
   height:97px;
   border-radius:8px;
-  background:#FFFFFF;
-  color:#22DAA8;
+  background:${theme.primaryBackgroundColor};
+  color:${theme.secondaryTextColor};
   display:flex;
   position:relative;
   flex-direction:column;
@@ -29,7 +29,7 @@ const Text = styled.p`
   top:20px;
   position:absolute;
   text-transform:uppercase;
-  font-weight:700;
+  font-weight:${theme.primaryFontWeight};
   font-size:19px;
 `;
 

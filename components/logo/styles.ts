@@ -1,7 +1,7 @@
 import styled from "styled-components";
-
+import {theme} from "../../styles/theme";
 const Logo = styled.div`
-  color:#C72C3C;
+  color:${theme.logoColor};
   border:2px solid rgba(199, 44, 60, 0.6);
   border-radius:4px;
   width:187px;
@@ -17,7 +17,7 @@ const Logo = styled.div`
 const Text = styled.p`
   opacity:0.8;
   font-size:32px;
-  font-weight:700;
+  font-weight:${theme.primaryFontWeight};
 `;
 
 export {Logo, Text};

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import {theme} from "../../styles/theme";
 const Disclaimers = styled.footer`
   display:flex;
   flex-direction:row;
@@ -13,8 +13,8 @@ const Disclaimers = styled.footer`
 `;
 
 const Text = styled.a`
-  color:#FFFFFF;
-  font-weight:400;
+  color:${theme.primaryBackgroundColor};
+  font-weight:${theme.fourthFontWeight};
   font-size:16px;
   opacity:0.3;
   text-decoration:none;
