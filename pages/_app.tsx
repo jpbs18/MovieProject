@@ -8,7 +8,7 @@ import {AppContext} from "./context";
 export default function App({ Component, pageProps }: AppProps) {
 
   const [movieState, setMovieState] = useState({selected: json.movies, counter: 1, imdb: ""});
-  const [isItOver, setIsItOver] = useState<boolean>(false);
+  const [isItOver, setIsItOver] = useState(false);
 
     return (
       <AppContext.Provider value={{movieState, setMovieState, isItOver, setIsItOver}}>
