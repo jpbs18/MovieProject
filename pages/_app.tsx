@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
     }
 
     sessionStorage.setItem("storage", JSON.stringify(dataStorage));
-  },[movieState.counter, movieState.imdb, movieState.selected])
+  },[movieState])
 
 
     return (
