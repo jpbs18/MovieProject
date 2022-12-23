@@ -1,6 +1,6 @@
 import {Disclaimers, Text} from "./styles";
 
-const MyDisclaimers = () => {
+export const MyDisclaimers = () => {
 
     return(
         <Disclaimers>
@@ -9,5 +9,3 @@ const MyDisclaimers = () => {
         </Disclaimers>
     );
 };
-
-export {MyDisclaimers};

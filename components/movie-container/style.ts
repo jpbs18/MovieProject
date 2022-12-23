@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ImagesContainer = styled.ul`
+const MoviesContainer = styled.ul`
   display:flex;
   flex-direction:row;
   list-style:none;
@@ -8,4 +8,4 @@ const ImagesContainer = styled.ul`
   padding:0;
 `;
 
-export {ImagesContainer};
+export {MoviesContainer};

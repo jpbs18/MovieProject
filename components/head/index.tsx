@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const MyHead = () => {
+export const MyHead = () => {
 
     return(
             <Head>
@@ -10,6 +10,4 @@ const MyHead = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
         )
-}
-
-export {MyHead};
+};

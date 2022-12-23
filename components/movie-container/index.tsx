@@ -1,4 +1,4 @@
-import {ImagesContainer} from "./style";
+import {MoviesContainer} from "./style";
 import {useContext} from "react";
 import {AppContext} from "../../pages/_app";
 import {MyMovie} from "../movie";
@@ -15,13 +15,13 @@ const MyMoviesContainer = () => {
     }
 
     return(
-        <ImagesContainer>
+        <MoviesContainer>
             {movieState.selected?.map((movie: Movie, index: number) => {
                 return <MyMovie key={index + "-" + movie.title}
                                 url={movie.imageUrl} title={movie.title} id={movie.id}
                                 handleClick={() => handleClick(movie.imdb, movie.id)}/>
             })}
-        </ImagesContainer>
+        </MoviesContainer>
     )
 }
 

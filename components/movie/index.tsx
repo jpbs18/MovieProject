@@ -1,8 +1,7 @@
 import {MovieProps} from "./types";
 import {MovieImage, ImageContainer, Overlay} from "./style";
 
-
-const MyMovie = (props: MovieProps) => {
+export const MyMovie = (props: MovieProps) => {
 
     const {url, title, handleClick} = props;
 
@@ -26,6 +25,4 @@ const MyMovie = (props: MovieProps) => {
             />
         </ImageContainer>
     )
-}
-
-export {MyMovie};
+};

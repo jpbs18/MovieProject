@@ -1,7 +1,7 @@
 import {Input} from "./style";
 import {DisplayElementProps} from "./types";
 
-const DisplayElement = (props: DisplayElementProps) => {
+export const DisplayElement = (props: DisplayElementProps) => {
 
     return (
         <div>
@@ -10,6 +10,3 @@ const DisplayElement = (props: DisplayElementProps) => {
         </div>
     )
 };
-
-
-export {DisplayElement};

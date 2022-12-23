@@ -1,23 +1,21 @@
-import {Progress, Display, Text} from "./styles";
-import {AppContext} from "../../pages/_app";
 import {useContext} from "react";
 import {DisplayElement} from "../progress-element";
-import {listOfOptions} from "../../utils/list-options";
+import {AppContext} from "../../pages/_app";
+import {listOfQuestions} from "../../utils/list-options";
+import {Progress, Display, Text} from "./styles";
 
-const MyProgress = () => {
+export const MyProgress = () => {
 
     const {movieState} = useContext(AppContext);
 
     return (
         <Progress>
-            <Text>question {movieState.counter} of {listOfOptions.length}:</Text>
+            <Text>question {movieState.counter} of {listOfQuestions.length}:</Text>
             <Display>
-                {listOfOptions.map((element, index) => {
+                {listOfQuestions.map((element, index) => {
                     return <DisplayElement key={index + "-element"} value={movieState.counter === index + 1}/>
                 })}
             </Display>
         </Progress>
     );
 };
-
-export {MyProgress};

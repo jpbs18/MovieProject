@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {theme} from "../../../../styles/theme";
-const MyAdButton = styled.button`
+const Button = styled.button`
   background: ${theme.buttonColor};
   width: 600px;
   height: 83px;
@@ -20,4 +20,4 @@ const MyAdButton = styled.button`
   }
 `;
 
-export {MyAdButton};
+export {Button};

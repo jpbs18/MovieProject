@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Component {...pageProps} />
       </AppContext.Provider>
   )
-}
+};
 
 export {AppContext};
 

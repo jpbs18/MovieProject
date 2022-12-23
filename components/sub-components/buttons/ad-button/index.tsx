@@ -1,9 +1,7 @@
-import { MyAdButton } from "./styles";
+import {Button} from "./styles";
 import {AdButtonProps} from "./types";
 
-const AdButton = (props: AdButtonProps) => {
+export const AdButton = (props: AdButtonProps) => {
 
-    return <MyAdButton>{props.text}</MyAdButton>
+    return <Button>{props.text}</Button>
 }
-
-export {AdButton};
