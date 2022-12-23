@@ -8,7 +8,7 @@ export const MoviesContainer = styled.ul`
   padding:0;
   
   @media only screen and (max-width: 650px){
-    gap:15px;
+    gap:10px;
     flex-direction:column;
   }
 `;

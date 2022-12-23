@@ -12,6 +12,6 @@ export const Page = styled.main`
   gap:30px;
 
   @media only screen and (max-width: 650px){
-    gap:10px;
+    gap:5px;
   }
 `;

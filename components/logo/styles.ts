@@ -12,10 +12,19 @@ export const Logo = styled.div`
   justify-content:center;
   align-items:center;
   margin-top:60px;
+
+  @media only screen and (max-width: 650px){
+    width:157px;
+    height:52px;
+  }
 `;
 
 export const Text = styled.p`
   opacity:0.8;
   font-size:32px;
   font-weight:${theme.primaryFontWeight};
+
+  @media only screen and (max-width: 650px){
+    font-size:26px;
+  }
 `;
