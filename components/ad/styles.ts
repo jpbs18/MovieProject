@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Link from "next/link";
 
-const AdContainer = styled.div`
+export const AdContainer = styled.div`
   width:684px;
   height:364px;
   border-radius:10px;
@@ -25,8 +25,6 @@ const AdContainer = styled.div`
   }
 `;
 
-const ButtonLink = styled(Link)`
+export const ButtonLink = styled(Link)`
   margin-top:6px;
 `;
-
-export {AdContainer, ButtonLink};

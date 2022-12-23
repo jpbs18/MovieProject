@@ -2,12 +2,12 @@ import styled from "styled-components";
 import Image from "next/image";
 
 
-const ImageContainer = styled.li`
+export const ImageContainer = styled.li`
   position:relative;
   display:flex;
 `;
 
-const MovieImage = styled(Image)`
+export const MovieImage = styled(Image)`
   border-radius:10px;
   cursor:pointer;
   z-index:1;
@@ -26,7 +26,7 @@ const MovieImage = styled(Image)`
     height:160px;
   }
 `;
-const Overlay = styled(Image)`
+export const Overlay = styled(Image)`
   border-radius:10px;
   cursor:pointer;
   position:absolute;
@@ -46,5 +46,3 @@ const Overlay = styled(Image)`
     height:160px;
   }
 `;
-
-export {MovieImage, ImageContainer, Overlay};

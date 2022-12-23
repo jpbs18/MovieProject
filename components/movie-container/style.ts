@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const MoviesContainer = styled.ul`
+export const MoviesContainer = styled.ul`
   display:flex;
   flex-direction:row;
   list-style:none;
@@ -12,5 +12,3 @@ const MoviesContainer = styled.ul`
     flex-direction:column;
   }
 `;
-
-export {MoviesContainer};

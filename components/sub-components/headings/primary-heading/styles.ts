@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {theme} from "../../../../styles/theme"
-const Heading = styled.h1`
+export const Heading = styled.h1`
   color:${theme.secondaryTextColor};
   font-weight:${theme.primaryFontWeight};
   font-size:32px;
@@ -11,5 +11,3 @@ const Heading = styled.h1`
     font-size:28px;
   }
 `;
-
-export {Heading};

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {theme} from "../../../../styles/theme";
-const Button = styled.button`
+export const Button = styled.button`
   background:${theme.buttonColor};
   width:600px;
   height:83px;
@@ -28,5 +28,3 @@ const Button = styled.button`
     font-size:28px;
   }
 `;
-
-export {Button};

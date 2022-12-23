@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Page = styled.main`
+export const Page = styled.main`
   height:100vh;
   max-width:100%;
   background:linear-gradient(109.6deg, rgba(10, 10, 10, 0.83) 100%, rgb(63, 61, 61) 100%), url("/images/MoviesBG.webp");
@@ -15,5 +15,3 @@ const Page = styled.main`
     gap:10px;
   }
 `;
-
-export {Page};

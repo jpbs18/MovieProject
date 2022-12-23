@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import {theme} from "../../styles/theme";
-const Disclaimers = styled.footer`
+
+export const Disclaimers = styled.footer`
   display:flex;
   flex-direction:row;
   justify-content:center;
@@ -12,13 +13,15 @@ const Disclaimers = styled.footer`
   transform:translateX(-50%);
 `;
 
-const Text = styled.a`
+export const Text = styled.a`
   color:${theme.primaryBackgroundColor};
   font-weight:${theme.fourthFontWeight};
   font-size:16px;
   opacity:0.3;
   text-decoration:none;
   cursor:default;
+  
+  @media only screen and (max-width: 650px){
+    font-size:14px;
+  }
 `;
-
-export {Disclaimers, Text};
