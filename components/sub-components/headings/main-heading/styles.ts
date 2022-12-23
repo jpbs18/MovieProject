@@ -6,6 +6,14 @@ const Heading = styled.h1`
   font-size:34px;
   text-align:center;
   color:${theme.primaryTextColor};
+
+  @media only screen and (max-width: 800px){
+    font-size:29px;
+  }
+  
+  @media only screen and (max-width: 650px){
+    font-size:24px;
+  }
 `;
 
 export {Heading};

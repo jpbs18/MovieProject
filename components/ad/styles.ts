@@ -13,6 +13,16 @@ const AdContainer = styled.div`
   gap:30px;
   align-items:center;
   margin-top:120px;
+
+  @media only screen and (max-width: 800px){
+    width:584px;
+  }
+
+  @media only screen and (max-width: 650px){
+    width:454px;
+    height:300px;
+    gap:20px;
+  }
 `;
 
 const ButtonLink = styled(Link)`

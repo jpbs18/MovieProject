@@ -6,6 +6,10 @@ const Heading = styled.h1`
   font-size:32px;
   text-transform: uppercase;
   margin:10px 0 0 0;
+
+  @media only screen and (max-width: 650px){
+    font-size:28px;
+  }
 `;
 
 export {Heading};

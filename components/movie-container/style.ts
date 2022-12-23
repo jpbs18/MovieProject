@@ -6,6 +6,11 @@ const MoviesContainer = styled.ul`
   list-style:none;
   gap:40px;
   padding:0;
+  
+  @media only screen and (max-width: 650px){
+    gap:15px;
+    flex-direction:column;
+  }
 `;
 
 export {MoviesContainer};

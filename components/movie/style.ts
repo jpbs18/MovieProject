@@ -15,6 +15,16 @@ const MovieImage = styled(Image)`
   &:hover{
     z-index:0;
   }
+
+  @media only screen and (max-width: 800px){
+    width:170px;
+    height:250px;
+  }
+
+  @media only screen and (max-width: 650px){
+    width:200px;
+    height:160px;
+  }
 `;
 const Overlay = styled(Image)`
   border-radius:10px;
@@ -24,6 +34,16 @@ const Overlay = styled(Image)`
   
   &:hover{
     z-index:1;
+  }
+
+  @media only screen and (max-width: 800px){
+    width:170px;
+    height:250px;
+  }
+
+  @media only screen and (max-width: 650px){
+    width:200px;
+    height:160px;
   }
 `;
 

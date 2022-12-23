@@ -5,6 +5,10 @@ const Heading = styled.h1`
   font-size:24px;
   color:${theme.tertiaryTextColor};
   margin:0;
+
+  @media only screen and (max-width: 650px){
+    font-size:18px;
+  }
 `;
 
 export {Heading};
