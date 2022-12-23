@@ -2,7 +2,7 @@ import {Dispatch, SetStateAction} from "react";
 import {StaticImageData} from "next/image";
 
 interface MovieState{
-    selected: Movie[],
+    selected: Movie[] | undefined,
     counter: number,
     imdb: string,
 }

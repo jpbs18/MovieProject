@@ -4,14 +4,14 @@ import {AppContext} from "../../pages/_app";
 import {MyMovie} from "../movie";
 import {Movie} from "../../pages/types";
 
-const MyMoviesContainer = () => {
+export const MyMoviesContainer = () => {
 
-    const {movieState, setMovieState, isItOver, setIsItOver} = useContext(AppContext);
+    const {movieState, setMovieState, setIsItOver} = useContext(AppContext);
 
     const handleClick = (imdb: string, id: number) => {
-        const movieSelected = movieState.selected?.filter((movie) => movie.id === id)[0];
-        setMovieState({...movieState, selected: movieSelected?.children, counter: movieState.counter + 1, imdb: imdb });
-        setIsItOver(movieState.selected?.some(movies => movies.children.length == 0) ? !isItOver : isItOver);
+        const movieSelected = movieState.selected?.find((movie) => movie.id === id);
+        setMovieState({...movieState, selected: movieSelected?.children || [], counter: movieState.counter + 1, imdb: imdb});
+        setIsItOver(movieState.selected?.some(movies => movies.children.length == 0)  || false);
     }
 
     return(
@@ -23,6 +23,4 @@ const MyMoviesContainer = () => {
             })}
         </MoviesContainer>
     )
-}
-
-export {MyMoviesContainer};
+};
