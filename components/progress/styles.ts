@@ -35,7 +35,7 @@ export const Display = styled.div`
   }
 `;
 
-export const Text = styled.p`
+export const ProgressText = styled.p`
   margin:0;
   top:20px;
   position:absolute;

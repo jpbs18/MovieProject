@@ -13,7 +13,7 @@ export const Disclaimers = styled.footer`
   transform:translateX(-50%);
 `;
 
-export const Text = styled.a`
+export const DisclaimersText = styled.a`
   color:${theme.primaryBackgroundColor};
   font-weight:${theme.fourthFontWeight};
   font-size:16px;

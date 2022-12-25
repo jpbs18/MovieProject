@@ -1,10 +1,10 @@
-import {Logo, Text} from "./styles"
+import {Logo, LogoText} from "./styles"
 
 export const MyLogo = () => {
 
     return (
         <Logo>
-            <Text>Your Logo</Text>
+            <LogoText>Your Logo</LogoText>
         </Logo>
     )
 };

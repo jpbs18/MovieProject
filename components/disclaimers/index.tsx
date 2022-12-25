@@ -1,11 +1,11 @@
-import {Disclaimers, Text} from "./styles";
+import {Disclaimers, DisclaimersText} from "./styles";
 
 export const MyDisclaimers = () => {
 
     return(
         <Disclaimers>
-            <Text href="#">Privacy Policy</Text>
-            <Text href="#">Terms of Use</Text>
+            <DisclaimersText href="#">Privacy Policy</DisclaimersText>
+            <DisclaimersText href="#">Terms of Use</DisclaimersText>
         </Disclaimers>
     );
 };

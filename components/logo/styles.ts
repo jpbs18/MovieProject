@@ -19,7 +19,7 @@ export const Logo = styled.div`
   }
 `;
 
-export const Text = styled.p`
+export const LogoText = styled.p`
   opacity:0.8;
   font-size:32px;
   font-weight:${theme.primaryFontWeight};
